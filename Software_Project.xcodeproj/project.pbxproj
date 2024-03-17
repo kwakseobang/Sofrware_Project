@@ -14,6 +14,11 @@
 		D6DACAD12BA21C9A005EF65E /* Software_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACAD02BA21C9A005EF65E /* Software_ProjectTests.swift */; };
 		D6DACADB2BA21C9A005EF65E /* Software_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACADA2BA21C9A005EF65E /* Software_ProjectUITests.swift */; };
 		D6DACADD2BA21C9A005EF65E /* Software_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACADC2BA21C9A005EF65E /* Software_ProjectUITestsLaunchTests.swift */; };
+		D6DACB212BA424D1005EF65E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACB202BA424D1005EF65E /* SplashView.swift */; };
+		D6DACB292BA4314F005EF65E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACB282BA4314F005EF65E /* LoginView.swift */; };
+		D6DACB9D2BA7137A005EF65E /* LoginBtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */; };
+		D6DACB9F2BA71617005EF65E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DACB9E2BA71617005EF65E /* Colors.xcassets */; };
+		D6DACBA42BA7249B005EF65E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACBA32BA7249B005EF65E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		D6DACAD62BA21C9A005EF65E /* Software_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Software_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DACADA2BA21C9A005EF65E /* Software_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Software_ProjectUITests.swift; sourceTree = "<group>"; };
 		D6DACADC2BA21C9A005EF65E /* Software_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Software_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6DACB202BA424D1005EF65E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D6DACB282BA4314F005EF65E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBtnStyle.swift; sourceTree = "<group>"; };
+		D6DACB9E2BA71617005EF65E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D6DACBA32BA7249B005EF65E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,15 @@
 		D6DACABE2BA21C98005EF65E /* Software_Project */ = {
 			isa = PBXGroup;
 			children = (
+				D6DACB262BA430AF005EF65E /* Services */,
+				D6DACB252BA430A6005EF65E /* Extensions */,
+				D6DACB982BA710D9005EF65E /* Core */,
+				D6DACB242BA4309F005EF65E /* Model */,
 				D6DACABF2BA21C98005EF65E /* Software_ProjectApp.swift */,
-				D6DACAC12BA21C98005EF65E /* ContentView.swift */,
 				D6DACAC32BA21C99005EF65E /* Assets.xcassets */,
+				D6DACB9E2BA71617005EF65E /* Colors.xcassets */,
+				D6DACAC12BA21C98005EF65E /* ContentView.swift */,
+				D6DACB202BA424D1005EF65E /* SplashView.swift */,
 				D6DACAC52BA21C99005EF65E /* Preview Content */,
 			);
 			path = Software_Project;
@@ -125,6 +141,85 @@
 				D6DACADC2BA21C9A005EF65E /* Software_ProjectUITestsLaunchTests.swift */,
 			);
 			path = Software_ProjectUITests;
+			sourceTree = "<group>";
+		};
+		D6DACB1F2BA4243F005EF65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACB282BA4314F005EF65E /* LoginView.swift */,
+				D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6DACB242BA4309F005EF65E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6DACB252BA430A6005EF65E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6DACB262BA430AF005EF65E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D6DACB272BA430BB005EF65E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACB1F2BA4243F005EF65E /* View */,
+				D6DACB9B2BA71308005EF65E /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D6DACB982BA710D9005EF65E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACBA02BA72473005EF65E /* Home */,
+				D6DACB272BA430BB005EF65E /* Login */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D6DACB9B2BA71308005EF65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6DACBA02BA72473005EF65E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACBA22BA72484005EF65E /* ViewModel */,
+				D6DACBA12BA7247B005EF65E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D6DACBA12BA7247B005EF65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACBA32BA7249B005EF65E /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6DACBA22BA72484005EF65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DACB9F2BA71617005EF65E /* Colors.xcassets in Resources */,
 				D6DACAC72BA21C99005EF65E /* Preview Assets.xcassets in Resources */,
 				D6DACAC42BA21C99005EF65E /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +355,10 @@
 			files = (
 				D6DACAC22BA21C98005EF65E /* ContentView.swift in Sources */,
 				D6DACAC02BA21C98005EF65E /* Software_ProjectApp.swift in Sources */,
+				D6DACB9D2BA7137A005EF65E /* LoginBtnStyle.swift in Sources */,
+				D6DACBA42BA7249B005EF65E /* HomeView.swift in Sources */,
+				D6DACB292BA4314F005EF65E /* LoginView.swift in Sources */,
+				D6DACB212BA424D1005EF65E /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

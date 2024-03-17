@@ -9,18 +9,19 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        VStack {
-            TitleView()
-                .padding(.top,70)
-            Spacer()
-                .frame(height: 50)
-            LoginInputView()
-            LoginTabView()
-            FindAccountView()
-            Spacer()
-            LoginApiBtnView()
+        NavigationView{
+            VStack {
+                TitleView()
+                    .padding(.top,70)
+                Spacer()
+                    .frame(height: 50)
+                LoginInputView()
+                LoginTabView()
+                FindAccountView()
+                Spacer()
+                LoginApiBtnView()
+            }
         }
-        
     }
 }
 //MARK: 헤더 뷰
@@ -95,20 +96,21 @@ private struct LoginInputView: View {
 
 private struct LoginTabView: View {
     fileprivate var body: some View {
-        Button{
-            //TODO: 로그인 인증?
-        }label: {
-            Text("Login")
-                .font(.system(size: 20))
-                .frame(maxWidth: .infinity, maxHeight: 40)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 3)
-                        .stroke(.bkText, lineWidth: 0.8)
-                }
-                .background(Color.gray)
-                .foregroundColor(.black)
-                .padding(.horizontal, 15)
-        }
+            NavigationLink{
+                
+                HomeView()
+            }label: {
+                Text("Login")
+                    .font(.system(size: 20))
+                    .frame(maxWidth: .infinity, maxHeight: 40)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 3)
+                            .stroke(.bkText, lineWidth: 0.8)
+                    }
+                    .background(Color.gray)
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 15)
+            }
     }
 }
 
