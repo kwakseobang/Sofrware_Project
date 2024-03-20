@@ -19,6 +19,9 @@
 		D6DACB9D2BA7137A005EF65E /* LoginBtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */; };
 		D6DACB9F2BA71617005EF65E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DACB9E2BA71617005EF65E /* Colors.xcassets */; };
 		D6DACBA42BA7249B005EF65E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACBA32BA7249B005EF65E /* HomeView.swift */; };
+		D6DACBA62BAB04CB005EF65E /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACBA52BAB04CB005EF65E /* Color+Extensions.swift */; };
+		D6DACBA82BAB08B6005EF65E /* iOSCheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACBA72BAB08B6005EF65E /* iOSCheckboxToggleStyle.swift */; };
+		D6DACBAA2BAB0F7A005EF65E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DACBA92BAB0F7A005EF65E /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBtnStyle.swift; sourceTree = "<group>"; };
 		D6DACB9E2BA71617005EF65E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D6DACBA32BA7249B005EF65E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D6DACBA52BAB04CB005EF65E /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		D6DACBA72BAB08B6005EF65E /* iOSCheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		D6DACBA92BAB0F7A005EF65E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			children = (
 				D6DACB282BA4314F005EF65E /* LoginView.swift */,
 				D6DACB9C2BA7137A005EF65E /* LoginBtnStyle.swift */,
+				D6DACBA72BAB08B6005EF65E /* iOSCheckboxToggleStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 		D6DACB252BA430A6005EF65E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D6DACBA52BAB04CB005EF65E /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 		D6DACB982BA710D9005EF65E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D6DACBAB2BAB0FBB005EF65E /* CreateAccount */,
 				D6DACBA02BA72473005EF65E /* Home */,
 				D6DACB272BA430BB005EF65E /* Login */,
 			);
@@ -194,6 +203,7 @@
 		D6DACB9B2BA71308005EF65E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D6DACBA92BAB0F7A005EF65E /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,6 +230,29 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6DACBAB2BAB0FBB005EF65E /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D6DACBAD2BAB0FEB005EF65E /* View */,
+				D6DACBAC2BAB0FE2005EF65E /* ViewModel */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		D6DACBAC2BAB0FE2005EF65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6DACBAD2BAB0FEB005EF65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +390,11 @@
 				D6DACAC02BA21C98005EF65E /* Software_ProjectApp.swift in Sources */,
 				D6DACB9D2BA7137A005EF65E /* LoginBtnStyle.swift in Sources */,
 				D6DACBA42BA7249B005EF65E /* HomeView.swift in Sources */,
+				D6DACBA82BAB08B6005EF65E /* iOSCheckboxToggleStyle.swift in Sources */,
+				D6DACBA62BAB04CB005EF65E /* Color+Extensions.swift in Sources */,
 				D6DACB292BA4314F005EF65E /* LoginView.swift in Sources */,
 				D6DACB212BA424D1005EF65E /* SplashView.swift in Sources */,
+				D6DACBAA2BAB0F7A005EF65E /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
