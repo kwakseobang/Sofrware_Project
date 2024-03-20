@@ -162,7 +162,7 @@ private struct CreateInfoBtnView: View {
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
             NavigationLink {
-                
+                InfoRegisterView()
             }label: {
                 Text("회원가입 >")
                     .foregroundColor(Color("mainColor"))
